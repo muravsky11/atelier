@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>muravsky | drop 001</title>
+  <title>Atelier | Drop 001</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,95 +12,76 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="loader">
+    <span>Atelier</span>
+  </div>
+
+  <header class="nav">
+    <a href="#" class="brand">Atelier</a>
+
+    <nav>
+      <a href="#drop">Drop 001</a>
+      <a href="#about">About</a>
+      <a href="#waitlist">Join</a>
+    </nav>
+  </header>
 
   <main class="hero">
-    <div class="noise"></div>
+    <div class="hero-overlay"></div>
 
-    <header class="nav">
-      <div class="brand">muravsky</div>
+    <div class="hero-content">
+      <p class="eyebrow">Limited collection</p>
+      <h1>Atelier</h1>
+      <p class="hero-bottom">Drop 001 — Autumn 2026</p>
+    </div>
 
-      <div class="nav-links">
-        <a href="#drop">drop 001</a>
-        <a href="#about">ABOUT</a>
-        <a href="#waitlist">join</a>
-      </div>
-    </header>
-
-    <section class="hero-content">
-      <p class="label">LIMITED STREETWEAR</p>
-
-      <h1>NOT MADE<br>FOR EVERYONE.</h1>
-
-      <p class="subtitle">
-        muravsky is built in limited drops. No mass production. No second chances.
-      </p>
-
-      <a href="#waitlist" class="button">GET EARLY ACCESS</a>
-    </section>
+    <a href="#about" class="scroll">scroll</a>
   </main>
 
-  <section id="drop" class="section">
-    <p class="label">COMING SOON</p>
+  <section id="about" class="section about">
+    <p class="eyebrow">The idea</p>
+    <h2>Quiet pieces. Strong presence.</h2>
+    <p>
+      Atelier creates minimal garments shaped by clean silhouettes, calm design
+      and carefully considered details. No noise. No mass production.
+    </p>
+  </section>
 
-    <h2>DROP 001</h2>
+  <section id="drop" class="section drop">
+    <div>
+      <p class="eyebrow">Coming soon</p>
+      <h2>Drop 001</h2>
+    </div>
 
-    <p class="text">
-      The first release will be available only for people on the waiting list.
-      Limited quantity. Early access before public launch.
+    <p>
+      The first release will be available in limited quantities.
+      Early access will be given to the waiting list before public launch.
     </p>
 
     <div class="countdown">
-      <div>
-        <span id="days">00</span>
-        <small>DAYS</small>
-      </div>
-
-      <div>
-        <span id="hours">00</span>
-        <small>HOURS</small>
-      </div>
-
-      <div>
-        <span id="minutes">00</span>
-        <small>MIN</small>
-      </div>
-
-      <div>
-        <span id="seconds">00</span>
-        <small>SEC</small>
-      </div>
+      <div><span id="days">00</span><small>days</small></div>
+      <div><span id="hours">00</span><small>hours</small></div>
+      <div><span id="minutes">00</span><small>min</small></div>
+      <div><span id="seconds">00</span><small>sec</small></div>
     </div>
   </section>
 
-  <section id="about" class="section about">
-    <p class="label">THE IDEA</p>
-
-    <h2>Built like a statement.</h2>
-
-    <p class="text">
-      muravsky is not about following trends. It is about creating pieces with identity,
-      character and limited access.
-    </p>
-  </section>
-
   <section id="waitlist" class="section waitlist">
-    <p class="label">EARLY ACCESS</p>
-
+    <p class="eyebrow">Early access</p>
     <h2>Join the list.</h2>
-
-    <p class="text">
-      Leave your email and get access to DROP 001 before everyone else.
-    </p>
+    <p>Leave your email and receive access before the public release.</p>
 
     <form>
-      <input type="email" placeholder="Your email" required />
-      <button type="submit">JOIN</button>
+      <input type="email" placeholder="Email address" required />
+      <button type="submit">Join</button>
     </form>
   </section>
 
   <footer>
-    <p>© muravsky</p>
+    <p>© Atelier</p>
+    <p>Designed in limited quantities.</p>
   </footer>
 
   <script src="script.js"></script>

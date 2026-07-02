@@ -4,8 +4,10 @@ function updateCountdown() {
   const now = new Date().getTime();
   const distance = dropDate - now;
 
+  const countdown = document.querySelector(".countdown");
+
   if (distance <= 0) {
-    document.querySelector(".countdown").innerHTML = "<p>DROP IS LIVE</p>";
+    countdown.innerHTML = "<p>Drop is live.</p>";
     return;
   }
 

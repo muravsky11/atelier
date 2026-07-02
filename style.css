@@ -10,148 +10,180 @@ html {
 
 body {
   background: #050505;
-  color: #f2f2f2;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f1ea;
+  font-family: "Inter", sans-serif;
 }
 
-.hero {
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 70% 30%, rgba(255,255,255,0.12), transparent 28%),
-    linear-gradient(180deg, #050505 0%, #111 100%);
-}
-
-.noise {
-  position: absolute;
+.loader {
+  position: fixed;
   inset: 0;
-  opacity: 0.05;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  background: #050505;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+  animation: hideLoader 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.loader span {
+  font-size: 28px;
+  letter-spacing: 8px;
+  font-weight: 300;
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 28px 42px;
+  padding: 26px 42px;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
-  background: rgba(5, 5, 5, 0.55);
+  z-index: 50;
+  background: rgba(5, 5, 5, 0.25);
   backdrop-filter: blur(14px);
 }
 
 .brand {
-  font-weight: 700;
+  color: #f5f1ea;
+  text-decoration: none;
+  font-size: 18px;
   letter-spacing: 5px;
+  font-weight: 400;
 }
 
-.nav-links a {
-  color: #fff;
+.nav nav a {
+  color: #f5f1ea;
   text-decoration: none;
   margin-left: 28px;
   font-size: 12px;
   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.55) 70%);
 }
 
 .hero-content {
-  min-height: 100vh;
-  padding: 180px 42px 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
+  text-align: center;
   z-index: 2;
 }
 
-.label {
-  font-size: 12px;
+.eyebrow {
+  font-size: 11px;
   letter-spacing: 4px;
-  color: #888;
+  text-transform: uppercase;
+  color: #aaa39a;
   margin-bottom: 22px;
 }
 
 h1 {
-  font-size: clamp(58px, 12vw, 160px);
+  font-size: clamp(72px, 16vw, 220px);
+  font-weight: 300;
+  letter-spacing: -8px;
   line-height: 0.85;
-  letter-spacing: -6px;
 }
 
-.subtitle {
-  margin-top: 30px;
-  color: #b8b8b8;
-  max-width: 520px;
-  font-size: 18px;
-  line-height: 1.6;
+.hero-bottom {
+  margin-top: 28px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d8d1c7;
 }
 
-.button {
-  margin-top: 42px;
-  width: fit-content;
-  padding: 17px 30px;
-  border: 1px solid #fff;
-  color: #fff;
+.scroll {
+  position: absolute;
+  bottom: 34px;
+  color: #d8d1c7;
   text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 2px;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background: #fff;
-  color: #000;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .section {
-  padding: 140px 42px;
-  max-width: 1000px;
+  min-height: 90vh;
+  padding: 150px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  max-width: 900px;
 }
 
 h2 {
-  font-size: clamp(42px, 8vw, 100px);
-  line-height: 0.9;
-  letter-spacing: -4px;
-  margin-bottom: 28px;
+  font-size: clamp(48px, 8vw, 110px);
+  font-weight: 300;
+  letter-spacing: -5px;
+  line-height: 0.95;
+  margin-bottom: 34px;
 }
 
-.text {
-  color: #aaa;
-  font-size: 19px;
-  line-height: 1.7;
+.section p {
   max-width: 650px;
+  color: #bdb6ad;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.drop {
+  border-top: 1px solid #171717;
+  border-bottom: 1px solid #171717;
 }
 
 .countdown {
-  margin-top: 50px;
   display: flex;
-  gap: 18px;
+  gap: 16px;
+  margin-top: 56px;
   flex-wrap: wrap;
 }
 
 .countdown div {
-  border: 1px solid #222;
-  padding: 28px;
   min-width: 130px;
-  text-align: center;
+  padding: 28px;
+  border: 1px solid #242424;
   background: #080808;
+  text-align: center;
 }
 
 .countdown span {
   display: block;
   font-size: 42px;
+  font-weight: 300;
 }
 
 .countdown small {
-  color: #777;
+  color: #7e776f;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.about {
-  margin-left: auto;
-}
-
-form {
+.waitlist form {
   margin-top: 38px;
   display: flex;
   max-width: 560px;
@@ -161,25 +193,30 @@ form {
 input {
   flex: 1;
   padding: 20px;
-  background: #0c0c0c;
+  background: transparent;
   border: 1px solid #333;
-  color: #fff;
+  color: #f5f1ea;
   font-size: 15px;
 }
 
 button {
   padding: 20px 34px;
-  background: #fff;
-  color: #000;
+  background: #f5f1ea;
+  color: #050505;
   border: none;
-  font-weight: 700;
   cursor: pointer;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 footer {
   padding: 42px;
-  color: #555;
+  display: flex;
+  justify-content: space-between;
+  color: #6f6963;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 760px) {
@@ -187,21 +224,24 @@ footer {
     padding: 22px;
   }
 
-  .nav-links {
+  .nav nav {
     display: none;
   }
 
-  .hero-content,
-  .section {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
   h1 {
-    letter-spacing: -3px;
+    letter-spacing: -4px;
   }
 
-  form {
+  .section {
+    padding: 110px 24px;
+  }
+
+  .waitlist form {
     flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
   }
 }
