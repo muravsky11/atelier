@@ -1,139 +1,104 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atelier</title>
-  <meta
-    name="description"
-    content="Atelier — limitowany obiekt do noszenia. Ciemna forma, mocna obecność, zero powtórek."
-  >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier | Drop 001</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="loader" aria-hidden="true">
-    <span>ATELIER</span>
-  </div>
-
   <header class="nav">
-    <a href="#top" class="brand">ATELIER</a>
+    <a href="#" class="brand">ATELIER</a>
 
-    <nav aria-label="Główna nawigacja">
-      <a href="#drop">Bluza</a>
-      <a href="#idea">Idea</a>
-      <a href="#about">O marce</a>
-      <a href="#waitlist">Waitlist</a>
+    <nav>
+      <a href="#drop">DROP 001</a>
+      <a href="#idea">IDEA</a>
+      <a href="#waitlist">WAITLIST</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="top">
-      <img
-        class="hero-image"
-        src="https://laetitiadelavillehuchet.com/clients/1363/fichiers/photos/620f7963c059c.jpg"
-        alt=""
-        aria-hidden="true"
-        fetchpriority="high"
-      >
-
-      <div class="hero-overlay"></div>
+    <section class="hero">
+      <div class="hero-shadow"></div>
 
       <div class="hero-content">
-        <p class="eyebrow">Drop 01 / Atelier object</p>
+        <p class="hero-small">DROP 001 / HOODIE PAINTED BOXY</p>
         <h1>ATELIER</h1>
-        <p class="hero-copy">
-          Nie kolejny basic. Jedna forma, jeden charakter, jedna obecność.
-        </p>
-        <p class="hero-bottom">Black hoodie / Quiet force / Limited piece</p>
+        <a href="#drop" class="scroll">PRZEWIŃ</a>
       </div>
-
-      <a class="scroll" href="#drop">Scroll</a>
     </section>
 
-    <section class="drop-product" id="drop">
-      <div class="drop-info">
-        <p class="eyebrow">Drop 01</p>
-        <h2>Bluza, którą nosi się z szacunkiem.</h2>
+    <section id="drop" class="drop-section">
+      <div class="drop-text">
+        <p class="section-label">DROP 001</p>
+
+        <h2>Ta bluza jest dziełem sztuki.</h2>
+
         <p>
-          Ta bluza nie powstała po to, żeby zniknąć w tłumie. Jest traktowana
-          jak obiekt, nie jak zwykły produkt. Każda sztuka ma własny ciężar,
-          własny detal i własny charakter. Druga taka sama już nie powstanie.
-          To rzecz, którą zakładasz świadomie i nosisz jak coś ważnego.
+          Prosimy nosić ją z szacunkiem.
         </p>
 
-        <a class="btn" href="#waitlist">Chcę wejść do dropu</a>
+        <p class="product-name">
+          Black Hoodie Painted
+        </p>
+
+        <a href="#waitlist" class="button">WCHODZĘ DO DROPU</a>
       </div>
 
-      <div class="product-visual">
-        <img
-          src="hoodie.jpg"
-          alt="Czarna bluza Atelier"
-          loading="lazy"
-          decoding="async"
-        >
+      <div class="hoodie-box">
+        <img src="hoodie.png" alt="Black Hoodie Painted Atelier">
       </div>
     </section>
 
-    <section class="section manifesto" id="idea">
-      <p class="eyebrow">Idea</p>
-      <h2>Nie robimy hałasu. Robimy rzeczy, które zostają.</h2>
-      <p>
-        Atelier stoi po stronie ciszy, formy i ciężaru materiału. Bez krzyku,
-        bez sezonowego pośpiechu, bez znaków robionych tylko po to, żeby były
-        widoczne z daleka. Liczy się sylwetka, proporcja i energia rzeczy na ciele.
-      </p>
-    </section>
+    <section id="idea" class="idea-section">
+      <div>
+        <p class="section-label">IDEA</p>
 
-    <section class="section about" id="about">
-      <div class="about-copy">
-        <p class="eyebrow">Piece value</p>
-        <h2>To nie seria. To ślad.</h2>
+        <h2>Tworzymy bluzy, które się nie powtarzają.</h2>
+
         <p>
-          Każdy egzemplarz ma być odbierany jak zamknięta kompozycja.
-          Nie chodzi o masową powtarzalność, tylko o obecność. O rzecz,
-          która ma swoją ciszę, ale zostawia mocne wrażenie.
+          Druga taka nie istnieje.
         </p>
-      </div>
 
-      <div class="about-note">
-        <div class="note-card">
-          <span class="note-label">Approach</span>
-          <p>
-            Minimal forma. Mocny kontur. Ciemna energia.
-            Jeden obiekt, który nie prosi o uwagę, tylko naturalnie ją zabiera.
-          </p>
-        </div>
+        <p>
+          Każda bluza jest wykonana z drogich materiałów i traktowana jak osobny projekt.
+        </p>
+
+        <p>
+          To nie jest zwykła bluza.
+        </p>
+
+        <p class="strong-text">
+          To dzieło sztuki.
+        </p>
       </div>
     </section>
 
-    <section class="section waitlist" id="waitlist">
-      <div class="waitlist-copy">
-        <p class="eyebrow">Early access</p>
-        <h2>Wejdź przed dropem.</h2>
+    <section id="waitlist" class="waitlist">
+      <div>
+        <p class="section-label">WAITLIST</p>
+        <h2>Dołącz do dropu.</h2>
         <p>
-          Zostaw mail, jeśli chcesz dostać dostęp wcześniej niż reszta.
-          Bez spamu. Tylko informacja, kiedy obiekt będzie gotowy.
+          Zapisz się, jeśli chcesz dostać informację o starcie DROP 001.
         </p>
       </div>
 
-      <form class="waitlist-form">
-        <input type="email" placeholder="Twój e-mail" aria-label="Twój e-mail">
-        <button type="submit">Dołącz</button>
+      <form>
+        <input type="email" placeholder="Twój e-mail" />
+        <button type="submit">Zapisz mnie</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <span>Atelier</span>
-    <span>Drop 01 / Black Hoodie</span>
+    <span>ATELIER / DROP 001</span>
+    <span>BLACK HOODIE PAINTED</span>
   </footer>
 </body>
 </html>
