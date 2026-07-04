@@ -14,6 +14,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* NAV */
 .nav {
   position: fixed;
   top: 0;
@@ -25,7 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 50;
-  background: rgba(5, 5, 5, 0.78);
+  background: rgba(5, 5, 5, 0.72);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -54,6 +55,7 @@ body {
   text-transform: uppercase;
 }
 
+/* HERO */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -62,8 +64,8 @@ body {
   overflow: hidden;
 
   background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.88)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.72)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.52)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.38)),
     url("https://laetitiadelavillehuchet.com/clients/1363/fichiers/photos/620f7963c059c.jpg");
 
   background-size: cover;
@@ -75,8 +77,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.70) 68%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.90));
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.30) 72%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.58));
   z-index: 1;
 }
 
@@ -84,7 +86,7 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  transform: translateY(-82px);
+  transform: translateY(-90px);
 }
 
 .hero-small {
@@ -92,8 +94,9 @@ body {
   font-size: 12px;
   letter-spacing: 7px;
   font-weight: 800;
-  color: #d8d0c4;
+  color: #f5f1ea;
   text-transform: uppercase;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
 }
 
 h1 {
@@ -103,6 +106,7 @@ h1 {
   letter-spacing: -7px;
   font-weight: 800;
   color: #fff8ee;
+  text-shadow: 0 22px 70px rgba(0, 0, 0, 0.95);
 }
 
 .scroll {
@@ -114,8 +118,10 @@ h1 {
   letter-spacing: 5px;
   font-weight: 800;
   text-transform: uppercase;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.95);
 }
 
+/* DROP */
 .drop-section {
   min-height: 100vh;
   display: grid;
@@ -184,13 +190,14 @@ h2 {
   text-transform: uppercase;
 }
 
+/* HOODIE IMAGE */
 .hoodie-box {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background:
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.35) 34%, rgba(0, 0, 0, 1) 74%);
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.40) 34%, rgba(0, 0, 0, 1) 76%);
   overflow: hidden;
 }
 
@@ -202,6 +209,7 @@ h2 {
   filter: contrast(1.08) brightness(0.95);
 }
 
+/* IDEA */
 .idea-section {
   min-height: 100vh;
   padding: 150px 7vw;
@@ -229,6 +237,7 @@ h2 {
   font-weight: 800;
 }
 
+/* ABOUT */
 .about-section {
   min-height: 80vh;
   padding: 150px 7vw;
@@ -238,6 +247,7 @@ h2 {
   background: #050505;
 }
 
+/* WAITLIST */
 .waitlist {
   min-height: 68vh;
   padding: 130px 7vw;
@@ -275,6 +285,7 @@ button {
   text-transform: uppercase;
 }
 
+/* FOOTER */
 footer {
   padding: 38px;
   display: flex;
@@ -288,6 +299,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* MOBILE */
 @media (max-width: 860px) {
   .nav {
     height: 74px;
@@ -303,8 +315,12 @@ footer {
     display: none;
   }
 
+  .hero {
+    background-position: center center;
+  }
+
   .hero-content {
-    transform: translateY(-55px);
+    transform: translateY(-60px);
     padding: 0 20px;
   }
 
