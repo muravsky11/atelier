@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Atelier | Drop 001</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <header class="nav">
-    <a href="#" class="brand">ATELIER</a>
+    <a href="#top" class="brand">ATELIER</a>
 
     <nav>
-      <a href="#drop">DROP 001</a>
+      <a href="#drop">BLUZA</a>
       <a href="#idea">IDEA</a>
+      <a href="#about">O MARCE</a>
       <a href="#waitlist">WAITLIST</a>
     </nav>
   </header>
 
-  <main>
+  <main id="top">
+
     <section class="hero">
-      <div class="hero-shadow"></div>
+      <div class="hero-overlay"></div>
 
       <div class="hero-content">
         <p class="hero-small">DROP 001 / HOODIE PAINTED BOXY</p>
+
         <h1>ATELIER</h1>
+
         <a href="#drop" class="scroll">PRZEWIŃ</a>
       </div>
     </section>
@@ -40,65 +46,66 @@
 
         <h2>Ta bluza jest dziełem sztuki.</h2>
 
-        <p>
-          Prosimy nosić ją z szacunkiem.
-        </p>
+        <p>Prosimy nosić ją z szacunkiem.</p>
 
-        <p class="product-name">
-          Black Hoodie Painted
-        </p>
+        <p class="product-name">Black Hoodie Painted</p>
 
         <a href="#waitlist" class="button">WCHODZĘ DO DROPU</a>
       </div>
 
       <div class="hoodie-box">
-        <img src="hoodie.png" alt="Black Hoodie Painted Atelier">
+        <img src="hoodie.jpg" alt="Black Hoodie Painted Atelier">
       </div>
     </section>
 
     <section id="idea" class="idea-section">
-      <div>
+      <div class="idea-content">
         <p class="section-label">IDEA</p>
 
         <h2>Tworzymy bluzy, które się nie powtarzają.</h2>
 
-        <p>
-          Druga taka nie istnieje.
-        </p>
+        <p>Druga taka nie istnieje.</p>
 
-        <p>
-          Każda bluza jest wykonana z drogich materiałów i traktowana jak osobny projekt.
-        </p>
+        <p>Każda bluza jest wykonana z drogich materiałów i traktowana jak osobny projekt.</p>
 
-        <p>
-          To nie jest zwykła bluza.
-        </p>
+        <p>To nie jest zwykła bluza.</p>
 
-        <p class="strong-text">
-          To dzieło sztuki.
-        </p>
+        <p class="strong-text">To dzieło sztuki.</p>
       </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <p class="section-label">O MARCE</p>
+
+      <h2>ATELIER robi rzeczy, które mają charakter.</h2>
+
+      <p>
+        Nie tworzymy masowej odzieży. Każdy drop jest ograniczony, przemyślany i wykonany tak,
+        żeby bluza miała swoją obecność od pierwszego założenia.
+      </p>
     </section>
 
     <section id="waitlist" class="waitlist">
       <div>
         <p class="section-label">WAITLIST</p>
-        <h2>Dołącz do dropu.</h2>
-        <p>
-          Zapisz się, jeśli chcesz dostać informację o starcie DROP 001.
-        </p>
+
+        <h2>Wejdź do dropu.</h2>
+
+        <p>Zapisz się, jeśli chcesz dostać informację o starcie DROP 001.</p>
       </div>
 
       <form>
         <input type="email" placeholder="Twój e-mail" />
-        <button type="submit">Zapisz mnie</button>
+        <button type="submit">ZAPISZ MNIE</button>
       </form>
     </section>
+
   </main>
 
   <footer>
     <span>ATELIER / DROP 001</span>
     <span>BLACK HOODIE PAINTED</span>
   </footer>
+
 </body>
 </html>
